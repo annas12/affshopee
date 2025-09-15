@@ -3,7 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Redirect</title>
-  <meta http-equiv="refresh" content="0; url=https://ww.lk.com">
+  <script>
+    // Daftar link Shopee
+    const links = [
+      "https://s.shopee.co.id/2LOvEBZIVg",
+      "https://s.shopee.co.id/1LWO2OurmS",
+      "https://s.shopee.co.id/6AbdnIOS0M",
+      "https://s.shopee.co.id/1LWO2QgF0v",
+      "https://s.shopee.co.id/1LWO2REgMF",
+      "https://s.shopee.co.id/8Kg8NJgH3v",
+      "https://s.shopee.co.id/6prKaZThrw"
+    ];
+
+    // Pilih link secara acak
+    const target = links[Math.floor(Math.random() * links.length)];
+
+    // Redirect langsung tanpa tampilan
+    window.location.replace(target);
+  </script>
 </head>
 <body></body>
 </html>
